@@ -1,0 +1,81 @@
+* {
+  box-sizing :border-box
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: verdana;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 100%
+}
+
+aside {
+}
+
+aside input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #b3b3b3;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02);
+}
+
+input:focus {
+  outline:0;
+}
+
+.points-of-interest > li {
+  text-align: left;
+  border-top: 1px solid #c7c7c7;
+  cursor: pointer;
+  padding: 10px 15px;
+  width: 100%;
+  font-size: 13px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.points-of-interest > li:last-of-type {
+ border-bottom: 1px solid #c7c7c7;
+}
+
+form {
+  padding: 6px;
+}
+
+li:hover {
+  background-color: #efefef;
+}
+
+.name {
+  font-size: 15px;
+}
+
+.distance {
+  color: #ce2d2d;
+}
+
+.street-address {
+  color: grey;
+}
+
+.categories {
+  text-transform: uppercase;
+  color: gray;
+}
