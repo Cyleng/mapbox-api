@@ -55,7 +55,7 @@ const renderSearchResults=async (data)=>{
     data.features.forEach(element=>{
         console.log(element);
         console.log(calculateDistance(proximityPosition, element.center))
-        placesList.insertAdjacentHTML("afterbegin",`
+        placesList.insertAdjacentHTML("beforeend",`
         <li data-long="${element.center[0]}" data-lat="${element.center[1]}">
             <ul class="poi" >
                 <li class="name">${element.text}</li>
